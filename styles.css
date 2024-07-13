@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-list .project {
+  flex: 1 1 calc(33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .project-list .project {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-list .project {
+    flex: 1 1 100%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+.skill-row{
+  width:50%;
+  margin: 100px auto 100px;
+  text-align: left;
+}
+.Myprofile{
+  height: 200px;
+  width: 200px;
+}
+.profile{
+  margin:100px 100px;
+}
+
+.wd1{
+  width: 45%;
+  float:left;
+  margin-right: 30px;
+  
+  margin-bottom: 30px;
+
+}
+.wd2{
+  width: 45%;
+  float:right;
+  margin-left: 30px;
+  
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
